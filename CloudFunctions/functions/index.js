@@ -1,9 +1,9 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const app = express();
-const Twit = require("twit");
 const cors = require("cors");
 app.use(cors());
+const Twit = require("twit");
 
 const { getTweets, addTweet } = require("./tweets");
 app.get("/tweets", getTweets);
